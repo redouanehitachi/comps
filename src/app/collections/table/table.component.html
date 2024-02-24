@@ -1,0 +1,14 @@
+<table class="ui table stripped" [ngClass]="classNames">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header.label }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let el of data">
+      <td>{{ el.name }}</td>
+      <td>{{ el.age }}</td>
+      <td>{{ el.job }}</td>
+    </tr>
+  </tbody>
+</table>
